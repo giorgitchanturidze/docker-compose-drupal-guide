@@ -14,31 +14,31 @@ You might need to replace `composer` with `php composer.phar` (or similar) for y
 * For Linux additionally install [docker compose](https://docs.docker.com/compose/install/).
 
 
-Make direction file for your project.
+1. Make direction file for your project.
 ```
 mkdir drupal-project
 ```
 
-After that you can create the project:
+2. After that you can create the project:
 ```
 composer create-project drupal-composer/drupal-project:9.x-dev drupal-project --no-interaction
 ```
 
-Download and unpack `docker4drupal.tar.gz` from the [latest stable release](https://github.com/wodby/docker4drupal/releases) to your project root.
+3. Download and unpack `docker4drupal.tar.gz` from the [latest stable release](https://github.com/wodby/docker4drupal/releases) to your project root.
 
-Delete `docker-compose.override.yml`.
+4. Delete `docker-compose.override.yml`.
 
-Create configuration file.
+5. Create configuration file.
 ```
 mkdir config/sync -p
 ```
 
-User permisions for container.
+6. User permisions for container.
 ```
 chown -R 1000:1000 ./
 ```
 
-Optional: database acceess settings in your `.env` file:
+7. Optional: database acceess settings in your `.env` file:
 ```
 MYSQL_DATABASE=${DB_NAME}
 MYSQL_HOSTNAME=${DB_HOST}
@@ -47,7 +47,7 @@ MYSQL_PORT=${DB_PORT}
 MYSQL_USER=${DB_USER}
 ```
 
-Optional: uncomment `13` and `15` lines in `docker-compose.yml` to prevent erasing database after `docker-compose down` command.
+8. Optional: uncomment `13` and `15` lines in `docker-compose.yml` to prevent erasing database after `docker-compose down` command.
 
 
 
