@@ -3,7 +3,7 @@
 
 Docker4Drupal is an open-source project [GitHub page](https://github.com/wodby/docker4drupal) that provides pre-configured `docker-compose.yml` file with images to spin up local environment on Linux, Mac OS X and Windows.
 
-# Requirements #
+## Requirements ##
 * [install Composer](https://getcomposer.org/doc/00-intro.md#installation-linux-unix-osx).
 
 > Note: The instructions below refer to the [global Composer installation](https://getcomposer.org/doc/00-intro.md#globally).
@@ -13,6 +13,7 @@ You might need to replace `composer` with `php composer.phar` (or similar) for y
 
 * For Linux additionally install [docker compose](https://docs.docker.com/compose/install/).
 
+## Installation ##
 
 1. Make direction file for your project.
 ```
