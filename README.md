@@ -44,7 +44,7 @@ mkdir config/sync -p
 chown -R 1000:1000 ./
 ```
 
-7. Optional: database acceess settings in your `.env` file:
+7. Database acceess settings in your `.env` file:
 ```
 MYSQL_DATABASE=${DB_NAME}
 MYSQL_HOSTNAME=${DB_HOST}
@@ -53,10 +53,21 @@ MYSQL_PORT=${DB_PORT}
 MYSQL_USER=${DB_USER}
 ```
 
-8. Optional: uncomment `13` and `15` lines in `docker-compose.yml` to prevent erasing database after `docker-compose down` command.
-
-
-
+8. Uncomment `13` and `15` lines in `docker-compose.yml` to prevent erasing database after `docker-compose down` command.
+9. Database driver in settings.php.
+```
+$databases['default']['default'] = array (
+  'database' => 'drupal',
+  'username' => 'drupal',
+  'password' => 'drupal',
+  'prefix' => '',
+  'host' => 'mariadb',
+  'port' => '3306',
+  'namespace' => 'Drupal\mysql\Driver\Database\mysql',
+  'driver' => 'mysql',
+  'autoload' => 'core/modules/mysql/src/Driver/Database/mysql/',
+);
+```
 
 
 
