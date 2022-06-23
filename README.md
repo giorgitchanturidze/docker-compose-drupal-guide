@@ -20,7 +20,7 @@ You might need to replace `composer` with `php composer.phar` (or similar) for y
 mkdir drupal-project
 ```
 
-2. After that you can create the project:
+2. Create composer project:
 ```
 composer create-project drupal-composer/drupal-project:9.x-dev drupal-project --no-interaction
 ```
