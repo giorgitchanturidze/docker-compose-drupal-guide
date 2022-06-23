@@ -26,6 +26,11 @@ composer create-project drupal-composer/drupal-project:9.x-dev drupal-project --
 ```
 
 3. Download and unpack `docker4drupal.tar.gz` from the [latest stable release](https://github.com/wodby/docker4drupal/releases) to your project root.
+*
+```
+cd drupal-project
+```
+* Unpack
 
 4. Delete `docker-compose.override.yml`.
 
