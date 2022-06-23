@@ -54,7 +54,7 @@ MYSQL_USER=${DB_USER}
 ```
 
 8. Uncomment `13` and `15` lines in `docker-compose.yml` to prevent erasing database after `docker-compose down` command.
-9. Database driver in settings.php.
+9. Database driver in `settings.php`.
 ```
 $databases['default']['default'] = array (
   'database' => 'drupal',
