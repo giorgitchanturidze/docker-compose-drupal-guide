@@ -72,7 +72,7 @@ $databases['default']['default'] = array (
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
 Installing themes or plugins:
 ```
-docker-compose exec php composer require 'drupal/<theme or plugin name'
+docker-compose exec php composer require 'drupal/<theme or plugin name>'
 ```
 
 
