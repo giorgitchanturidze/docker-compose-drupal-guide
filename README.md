@@ -75,7 +75,7 @@ docker-compose up -d
 ```
 * Open browser and go to this adress:
  ```
- http://drupalcamp.docker.localhost:8000/
+ http://drupal.docker.localhost:8000/
 ```
 ## Configure Your Environment for Theme Development. ##
 
