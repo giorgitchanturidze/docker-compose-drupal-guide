@@ -68,6 +68,18 @@ $databases['default']['default'] = array (
   'autoload' => 'core/modules/mysql/src/Driver/Database/mysql/',
 );
 ```
+### Congrats you can launch the Drupal!
+```
+docker-compose up -d
+```
+## Configure Your Environment for Theme Development.
+
+1. To turn on Drupal errors add this line in `settings.php`.
+```
+$config['system.logging']['error_level'] = 'verbose';
+```
+2. 
+
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
 Installing themes or plugins:
