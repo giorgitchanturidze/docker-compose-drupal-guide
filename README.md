@@ -68,7 +68,7 @@ $databases['default']['default'] = array (
   'autoload' => 'core/modules/mysql/src/Driver/Database/mysql/',
 );
 ```
-### Congrats you can launch the Drupal!
+### Congrats you can run Drupal!
 ```
 docker-compose up -d
 ```
