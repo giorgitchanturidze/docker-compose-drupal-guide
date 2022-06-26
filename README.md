@@ -69,8 +69,13 @@ $databases['default']['default'] = array (
 );
 ```
 ### Congrats you can now run Drupal!
+* Run in terminal:
 ```
 docker-compose up -d
+```
+* Open browser and go to this adress:
+ ```
+ http://drupalcamp.docker.localhost:8000/
 ```
 ## Configure Your Environment for Theme Development. ##
 
