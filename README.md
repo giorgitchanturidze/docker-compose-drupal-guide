@@ -9,6 +9,8 @@ Docker4Drupal is an open-source project [GitHub page](https://github.com/wodby/d
 > _**Note**: The instructions below refer to the [global Composer installation](https://getcomposer.org/doc/00-intro.md#globally).
 You might need to replace `composer` with `php composer.phar` (or similar) for your setup._
 
+* [Install Docker ubuntu](https://docs.docker.com/engine/install/ubuntu/).
+
 
 ## Installation ##
 
