@@ -11,6 +11,7 @@ You might need to replace `composer` with `php composer.phar` (or similar) for y
 
 * [Install Docker ubuntu](https://docs.docker.com/engine/install/ubuntu/).
 
+* [Install Docker compose]([https://docs.docker.com/engine/install/ubuntu/](https://docs.docker.com/compose/install/compose-plugin/#installing-compose-on-linux-systems)).
 
 ## Installation ##
 
