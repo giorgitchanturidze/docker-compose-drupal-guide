@@ -51,17 +51,16 @@ MYSQL_USER=${DB_USER}
 ```
 **8.** A common use case is to supply database credentials via the environment. Edit `settings.php`.
 ```
-$databases['default']['default'] = array (
-  'database' => 'drupal',
-  'username' => 'drupal',
-  'password' => 'drupal',
-  'prefix' => '',
-  'host' => 'mariadb',
-  'port' => '3306',
-  'namespace' => 'Drupal\mysql\Driver\Database\mysql',
-  'driver' => 'mysql',
-  'autoload' => 'core/modules/mysql/src/Driver/Database/mysql/',
-);
+$databases['default']['default'] = [
+   'database' => $_ENV['MYSQL_DATABASE'],
+   'driver' => 'mysql',
+   'host' => $_ENV['MYSQL_HOSTNAME'],
+   'namespace' => 'Drupal\\Core\\Database\\Driver\\mysql',
+   'password' => $_ENV['MYSQL_PASSWORD'],
+   'port' => $_ENV['MYSQL_PORT'],
+   'prefix' => '',
+   'username' => $_ENV['MYSQL_USER'],
+ ];
 ```
 
 
