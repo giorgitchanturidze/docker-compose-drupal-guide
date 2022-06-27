@@ -49,9 +49,7 @@ MYSQL_PASSWORD=${DB_PASSWORD}
 MYSQL_PORT=${DB_PORT}
 MYSQL_USER=${DB_USER}
 ```
-
-**8.** Uncomment `13` and `15` lines in `docker-compose.yml` to prevent erasing database after `docker-compose down` command.
-**9.** Database driver in `settings.php`.
+**8.** A common use case is to supply database credentials via the environment. Edit `settings.php`.
 ```
 $databases['default']['default'] = array (
   'database' => 'drupal',
@@ -65,6 +63,10 @@ $databases['default']['default'] = array (
   'autoload' => 'core/modules/mysql/src/Driver/Database/mysql/',
 );
 ```
+
+
+**9.** Uncomment `13` and `15` lines in `docker-compose.yml` to prevent erasing database after `docker-compose down` command.
+
 ### Congrats you can now run Drupal!
 * Run in terminal:
 ```
