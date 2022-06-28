@@ -84,12 +84,26 @@ docker-compose up -d
  ```
  http://drupal.docker.localhost:8000/
 ```
-## Configure Your Environment for Theme Development. ##
+## Configure Your Environment for Drupal Development. ##
 
-1. To turn on Drupal errors add this line in `settings.php`.
+1. To enable developer/debug mode.
+Uncommenting the following lines in the `settings.php` file. `emacs sites/default/settings.php`
+```
+if (file_exists(__DIR__ . '/settings.local.php')) {
+  include __DIR__ . '/settings.local.php';
+}
+```
+and then copying the file `example.settings.local.php` from `/sites` folder to `/sites/default` folder and rename it to `settings.local.php`
+```
+cp sites/example.settings.local.php sites/default/settings.local.php
+```
+In addition to adding the following setting
 ```
 $config['system.logging']['error_level'] = 'verbose';
 ```
+it also adds a few other settings which will help you in debugging and making development easier. If you don't want any of them in particular, you can always comment them out.
+
+Note : If you think adding a `file_exists` call to each page will slow down the site, you can always remove it in the production code.
 2. 
 
 
