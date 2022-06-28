@@ -1,4 +1,4 @@
-# Bitoid [Docker4Drupal](https://github.com/wodby/docker4drupal) ![](https://seeklogo.com/images/D/drupal-logo-AD2AF3310E-seeklogo.com.png =250x250)
+# Bitoid [Docker4Drupal](https://github.com/wodby/docker4drupal) ![](https://seeklogo.com/images/D/drupal-logo-AD2AF3310E-seeklogo.com.png | width=40px)
 ## This is "Bitoid" [Docker4Drupal](https://github.com/wodby/docker4drupal) installation instructions i have used for my project:
 
 Docker4Drupal is an open-source project [GitHub page](https://github.com/wodby/docker4drupal) that provides pre-configured `docker-compose.yml` file with images to spin up local environment on Linux, Mac OS X and Windows.
