@@ -80,6 +80,11 @@ $databases['default']['default'] = [
 ```
 docker-compose up -d
 ```
+or
+```
+docker compose up -d
+```
+
 * Open browser and go to this adress:
  ```
  http://drupal.docker.localhost:8000/
