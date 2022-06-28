@@ -86,8 +86,8 @@ docker-compose up -d
 ```
 ## Configure Your Environment for Drupal Development. ##
 
-1. To enable developer/debug mode.
-Uncommenting the following lines in the `settings.php` file. `emacs sites/default/settings.php`
+## Enable developer/debug mode. ##
+Uncommenting the following lines in the `settings.php` file. `emacs sites/default/settings.php`. Make sure this code is at the bottom of your `settings.php` file so that local settings can override default settings.
 ```
 if (file_exists(__DIR__ . '/settings.local.php')) {
   include __DIR__ . '/settings.local.php';
@@ -97,15 +97,25 @@ and then copying the file `example.settings.local.php` from `/sites` folder to `
 ```
 cp sites/example.settings.local.php sites/default/settings.local.php
 ```
-In addition to adding the following setting
-```
-$config['system.logging']['error_level'] = 'verbose';
-```
-it also adds a few other settings which will help you in debugging and making development easier. If you don't want any of them in particular, you can always comment them out.
+It adds a few settings which will help you in debugging and making development easier. If you don't want any of them in particular, you can always comment them out.
+_Note : If you think adding a `file_exists` call to each page will slow down the site, you can always remove it in the production code._
+ **Disable render caching and JavaScript/CSS aggregation**
+* Uncomment lines in settings.local.php
+1. Ensure that the following lines are uncommented by removing the # character from the beginning of the line.
 
-Note : If you think adding a `file_exists` call to each page will slow down the site, you can always remove it in the production code.
-2. 
-
+This first set disables the CSS and JavaScript aggregation features.
+```
+$config['system.performance']['css']['preprocess'] = FALSE;
+$config['system.performance']['js']['preprocess'] = FALSE;
+```
+2. And uncommenting this line effectively disables, or rather, bypasses the Render API cache:
+```
+$settings['cache']['bins']['render'] = 'cache.backend.null';
+```
+3. You can also disable the Dynamic Page Cache by uncommenting this line:
+```
+$settings['cache']['bins']['dynamic_page_cache'] = 'cache.backend.null';
+```
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
 ## Installing themes or plugins ##
