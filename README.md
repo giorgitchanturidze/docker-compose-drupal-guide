@@ -99,6 +99,7 @@ cp sites/example.settings.local.php sites/default/settings.local.php
 ```
 It adds a few settings which will help you in debugging and making development easier. If you don't want any of them in particular, you can always comment them out.
 _Note : If you think adding a `file_exists` call to each page will slow down the site, you can always remove it in the production code._
+
  **Disable render caching and JavaScript/CSS aggregation**
 * Uncomment lines in settings.local.php
 1. Ensure that the following lines are uncommented by removing the # character from the beginning of the line.
