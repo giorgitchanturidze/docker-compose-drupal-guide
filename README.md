@@ -84,6 +84,8 @@ docker-compose up -d
  ```
  http://drupal.docker.localhost:8000/
 ```
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+
 ## Configure Your Environment for Drupal Development. ##
 
 ## Enable developer/debug mode. ##
