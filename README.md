@@ -117,7 +117,17 @@ $settings['cache']['bins']['render'] = 'cache.backend.null';
 ```
 $settings['cache']['bins']['dynamic_page_cache'] = 'cache.backend.null';
 ```
+**Enable Twig debugging options**
+* Edit the following variables under the `twig.config:` section.
 
+If you're placing this into your `sites/development.services.yml` file, add the `twig.config` configuration indented under the `parameters:` line. Ensure that your code additions are appropriately indented with 2 spaces, not the tab character (_or an error will result_).
+```
+parameters:
+  twig.config:
+    debug: true
+    auto_reload: true
+    cache: false
+```
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
 ## Installing themes or plugins ##
 ```
