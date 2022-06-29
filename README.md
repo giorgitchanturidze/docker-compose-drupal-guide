@@ -135,6 +135,7 @@ parameters:
     auto_reload: true
     cache: false
 ```
+4. [Install Webprofiler and Identify Controllers](https://www.drupal.org/project/devel)
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
 ## Installing themes or plugins ##
 ```
