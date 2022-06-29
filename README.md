@@ -136,6 +136,9 @@ parameters:
     cache: false
 ```
 4. [Install Webprofiler and Identify Controllers](https://www.drupal.org/project/devel)
+`Confugure`:
+Check the boxes for: `Events`, `Routing` and `Services`.
+`Save Configuration`.
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
 ## Installing themes or plugins ##
 ```
