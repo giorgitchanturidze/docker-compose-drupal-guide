@@ -93,7 +93,7 @@ docker compose up -d
 ## Configure Your Environment for Drupal Development. ##
 
 ## Enable developer/debug mode. ##
-Uncommenting the following lines in the `settings.php` file. `emacs sites/default/settings.php`. Make sure this code is at the bottom of your `settings.php` file so that local settings can override default settings.
+Uncommenting the following lines in the `settings.php` file. Make sure this code is at the bottom of your `settings.php` file so that local settings can override default settings.
 ```
 if (file_exists(__DIR__ . '/settings.local.php')) {
   include __DIR__ . '/settings.local.php';
