@@ -49,8 +49,9 @@ mkdir config/sync -p
 ```
 chown -R 1000:1000 ./
 ```
+**7.** Uncomment `13` and `15` lines in `docker-compose.yml` to prevent erasing database after `docker-compose down` command.
 
-**7.** Database acceess settings in your `.env` file:
+**8. optional ** Database acceess settings in your `.env` file:
 ```
 MYSQL_DATABASE=${DB_NAME}
 MYSQL_HOSTNAME=${DB_HOST}
@@ -58,7 +59,7 @@ MYSQL_PASSWORD=${DB_PASSWORD}
 MYSQL_PORT=${DB_PORT}
 MYSQL_USER=${DB_USER}
 ```
-**8.** A common use case is to supply database credentials via the environment. Edit `settings.php`.
+**9. optional ** A common use case is to supply database credentials via the environment. Edit `settings.php`.
 ```
 $databases['default']['default'] = [
    'database' => $_ENV['MYSQL_DATABASE'],
@@ -72,8 +73,6 @@ $databases['default']['default'] = [
  ];
 ```
 
-
-**9.** Uncomment `13` and `15` lines in `docker-compose.yml` to prevent erasing database after `docker-compose down` command.
 
 ### Congrats you can now run Drupal!
 * Run in terminal:
