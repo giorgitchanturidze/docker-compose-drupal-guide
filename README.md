@@ -143,7 +143,10 @@ Check the boxes for: `Events`, `Routing` and `Services`.
 ```
 docker-compose exec php composer require 'drupal/<theme or plugin name>'
 ```
-
+or
+```
+docker compose exec php composer require 'drupal/<theme or plugin name>'
+```
 
 
 
