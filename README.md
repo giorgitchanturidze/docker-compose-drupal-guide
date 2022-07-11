@@ -16,7 +16,6 @@ You might need to replace `composer` with `php composer.phar` (or similar) for y
 
 * [Install Docker ubuntu](https://docs.docker.com/engine/install/ubuntu/).
 
-* [Install Docker compose](https://docs.docker.com/compose/install/compose-plugin/#installing-compose-on-linux-systems)
 * To run docker without `sudo` enter in terminal:
 ```
 sudo groupadd docker
