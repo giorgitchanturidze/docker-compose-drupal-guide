@@ -55,7 +55,7 @@ chown -R 1000:1000 ./
 ```
 **7.** Uncomment `13` and `15` lines in `docker-compose.yml` to prevent erasing database after `docker-compose down` command.
 
-**8. _optional_** Database acceess settings in your `.env` file:
+**8. _optional:_** Database acceess settings in your `.env` file:
 ```
 MYSQL_DATABASE=${DB_NAME}
 MYSQL_HOSTNAME=${DB_HOST}
@@ -63,7 +63,7 @@ MYSQL_PASSWORD=${DB_PASSWORD}
 MYSQL_PORT=${DB_PORT}
 MYSQL_USER=${DB_USER}
 ```
-**9. _optional_** A common use case is to supply database credentials via the environment. Edit `settings.php`.
+**9. _optional:_** A common use case is to supply database credentials via the environment. Edit `settings.php`.
 ```
 $databases['default']['default'] = [
    'database' => $_ENV['MYSQL_DATABASE'],
