@@ -88,12 +88,14 @@ or
 docker compose up -d
 ```
 
+[^Note]: docker compose is newer version of docker-composer.
+
 * Open browser and go to this adress:
  ```
  http://drupal.docker.localhost:8000/
 ```
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
-
+https://www.linkedin.com/in/otarza/
 ## Configure Your Environment for Drupal Development. ##
 
 ## Enable developer/debug mode. ##
