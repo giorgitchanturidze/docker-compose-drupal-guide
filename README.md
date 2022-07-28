@@ -63,7 +63,7 @@ MYSQL_PASSWORD=${DB_PASSWORD}
 MYSQL_PORT=${DB_PORT}
 MYSQL_USER=${DB_USER}
 ```
-**9. _optional:_** A common use case is to supply database credentials via the environment. Edit `settings.php`.
+**9. _optional:_** A common use case is to supply database credentials via the environment. Add to `settings.php`:
 ```
 $databases['default']['default'] = [
    'database' => $_ENV['MYSQL_DATABASE'],
