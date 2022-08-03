@@ -53,7 +53,13 @@ mkdir config/sync -p
 ```
 chown -R 1000:1000 ./
 ```
-**7.** Uncomment `13` and `15` lines in `docker-compose.yml` to prevent erasing database after `docker-compose down` command.
+**7.** Set up Mariadb volume by uncomment `13` and `15` lines and changing path in `docker-compose.yml` to prevent erasing database after `docker-compose down`.
+```
+volumes:
+#      - ./mariadb-init:/docker-entrypoint-initdb.d # Place init .sql file(s) here.
+      - ./mariadb-data:/var/lib/mysql # Use bind mount
+```
+> _**Note**: 8 and 9 steps are optional, if you have not idea what they do, you can just this steps and jump to next steps ._
 
 **8. _optional:_** Database acceess settings in your `.env` file:
 ```
