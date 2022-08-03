@@ -12,7 +12,7 @@ sudo apt install php-cli php-curl php-gd php-mbstring php-sqlite3 php-xml
 * [Install Composer](https://getcomposer.org/doc/00-intro.md#installation-linux-unix-osx).
 
 > _**Note**: The instructions below refer to the [global Composer installation](https://getcomposer.org/doc/00-intro.md#globally).
-You might need to replace `composer` with `php composer.phar` (or similar) for your setup._
+You might need to replace `composer` with `php composer.phar` (or similar) for your setup. Also you may use `docker compose` command older version `docker-compose` _
 
 * [Install Docker ubuntu](https://docs.docker.com/engine/install/ubuntu/).
 
@@ -59,7 +59,7 @@ volumes:
 #      - ./mariadb-init:/docker-entrypoint-initdb.d # Place init .sql file(s) here.
       - ./mariadb-data:/var/lib/mysql # Use bind mount
 ```
-> _**Note**: 8 and 9 steps are optional, if you have not idea what they do, you can just this steps and jump to next steps ._
+> _**Note**: 8 and 9 steps are optional, if you have no idea what they do, you can just skip this steps and jump to next steps ._
 
 **8. _optional:_** Database acceess settings in your `.env` file:
 ```
