@@ -12,7 +12,7 @@ sudo apt install php-cli php-curl php-gd php-mbstring php-sqlite3 php-xml
 * [Install Composer](https://getcomposer.org/doc/00-intro.md#installation-linux-unix-osx).
 
 > _**Note**: The instructions below refer to the [global Composer installation](https://getcomposer.org/doc/00-intro.md#globally).
-You might need to replace `composer` with `php composer.phar` (or similar) for your setup. Also you may use `docker compose` command older version `docker-compose` _
+You might need to replace `composer` with `php composer.phar` (or similar) for your setup. Also  maybe you are using `docker compose` command older version `docker-compose` _
 
 * [Install Docker ubuntu](https://docs.docker.com/engine/install/ubuntu/).
 
@@ -53,7 +53,7 @@ mkdir config/sync -p
 ```
 chown -R 1000:1000 ./
 ```
-**7.** Set up Mariadb volume by uncomment `13` and `15` lines and changing path in `docker-compose.yml` to prevent erasing database after `docker-compose down`.
+**7.** Set up Mariadb volume by uncomment `13` and `15` lines and changing path in `docker-compose.yml` to prevent erasing database after `docker compose down`.
 ```
 volumes:
 #      - ./mariadb-init:/docker-entrypoint-initdb.d # Place init .sql file(s) here.
@@ -86,10 +86,6 @@ $databases['default']['default'] = [
 
 ### Congrats you can now run Drupal!
 * Run in terminal:
-```
-docker-compose up -d
-```
-or
 ```
 docker compose up -d
 ```
@@ -153,12 +149,9 @@ Check the boxes for: `Events`, `Routing` and `Services`.
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
 ## Installing themes or plugins ##
 ```
-docker-compose exec php composer require 'drupal/<theme or plugin name>'
-```
-or
-```
 docker compose exec php composer require 'drupal/<theme or plugin name>'
 ```
+
 
 
 
