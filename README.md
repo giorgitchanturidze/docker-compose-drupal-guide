@@ -9,11 +9,6 @@ Docker4Drupal is an open-source project [GitHub page](https://github.com/wodby/d
 sudo apt install php-cli php-curl php-gd php-mbstring php-sqlite3 php-xml
 ```
 
-* [Install Composer](https://getcomposer.org/doc/00-intro.md#installation-linux-unix-osx).
-
-> _**Note**: The instructions below refer to the [global Composer installation](https://getcomposer.org/doc/00-intro.md#globally).
-You might need to replace `composer` with `php composer.phar` (or similar) for your setup. Also  maybe you are using `docker compose` command older version `docker-compose` _
-
 * [Install Docker ubuntu](https://docs.docker.com/engine/install/ubuntu/).
 
 * To run docker without `sudo` enter in terminal:
