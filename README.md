@@ -13,8 +13,7 @@ sudo apt install php-cli php-curl php-gd php-mbstring php-sqlite3 php-xml
 
 * To run docker without `sudo` enter in terminal:
 ```
-sudo groupadd docker
-sudo usermod -aG docker $USER
+https://docs.docker.com/engine/install/linux-postinstall/
 ```
 Restart PC 
 
